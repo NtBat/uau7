@@ -1,0 +1,105 @@
+.styledLinkContent {
+  font-size: 14px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  color: #000;
+}
+
+.menuContainerNav {
+  width: 100%;
+  padding: 0 15px;
+}
+
+.styledLinkContainer {
+  margin: 0;
+  width: 100%;
+  border-bottom: 1px solid #CDCDCD;
+  padding: 20px 0;
+}
+
+.menuContainer--drawer-category {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  margin-top: 20px;
+  gap: 9px;
+}
+
+.menuItem--menu-item-category {
+  border: 1px solid #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.styledLinkContainer--menu-item-category {
+  margin: 0;
+  padding: 8px;
+  border: none;
+}
+
+.styledLinkContent--menu-item-category {
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.menuContainer--drawer-logo-category {
+  flex-direction: row;
+  gap: 10px;
+  justify-content: center;
+  margin-top: 25px;
+}
+
+.menuItem--menu-item-novidades, .menuItem--menu-item-promocoes {
+  border: 1px solid #FFF;
+  border-radius: 5px;
+  transform: skew(-16deg);
+  width: 50%;
+  max-width: 130px;
+}
+
+.styledLinkContent--menu-item-novidades, .styledLinkContent--menu-item-promocoes {
+  color: #FFF;
+  text-transform: capitalize;
+  transform: skew(16deg);
+  font-weight: 700;
+  margin-left: 8px;
+}
+
+.styledLinkContainer--menu-item-novidades, .styledLinkContainer--menu-item-promocoes {
+  padding: 7px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  border: none;
+}
+
+.styledLink--menu-item-novidades--highlight, .styledLink--menu-item-promocoes--highlight {
+  width: 100%;
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.styledLink--menu-item-novidades--highlight::before {
+  content: '';
+  background: url("assets/news-white.svg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  width: 20px;
+  height: 20px;
+  transform: skew(16deg);
+}
+
+.styledLink--menu-item-promocoes--highlight::before {
+  content: '';
+  background: url("assets/promos-white.svg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  width: 20px;
+  height: 20px;
+  transform: skew(16deg);
+}

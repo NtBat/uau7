@@ -1,0 +1,54 @@
+.menuIcon {
+  display: none;
+}
+
+.openIconContainer {
+  position: relative;
+  padding: 0;
+  width: 20px;
+  height: 20px;
+}
+
+.openIconContainer::after {
+  content: '';
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  right: 0;
+  background: url("assets/drawer-white.svg");
+  background-size: 100% 100%;
+}
+
+.openIconContainer--drawer-category::after {
+  background: url("assets/search-white.svg");
+  background-size: 100% 100%;
+}
+
+.childrenContainer {
+  flex-direction: column;
+}
+
+.opened .closeIconButton {
+  display: flex;
+}
+
+.closeIconButton {
+  background: #FFF;
+  transform: skew(-12deg);
+  border-radius: 5px;
+  position: absolute;
+  right: -22px;
+  width: 51px;
+  height: 40px;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  top: 70px;
+  padding: 10px;
+}
+
+.closeIcon {
+  width: 39px;
+  height: 46px;
+  transform: skew(12deg);
+}

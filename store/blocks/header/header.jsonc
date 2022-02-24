@@ -1,0 +1,329 @@
+{
+  "header": {
+    "blocks": ["header-layout.desktop", "header-layout.mobile"]
+  },
+  "header.full": {
+    "blocks": ["header-layout.desktop", "header-layout.mobile"]
+  },
+  "header-layout.desktop": {
+    "children": [
+      "flex-layout.row#1-desktop",
+      "flex-layout.row#2-desktop",
+      "flex-layout.row#3-desktop",
+      "sticky-layout#4-desktop"
+    ]
+  },
+
+  "flex-layout.row#1-desktop": {
+    "children": ["telemarketing"],
+    "props": {
+      "fullWidth": true
+    }
+  },
+
+  "flex-layout.row#2-desktop": {
+    "children": ["notification.bar#home"],
+    "props": {
+      "fullWidth": "true"
+    }
+  },
+  "notification.bar#home": {
+    "props": {
+      "content": "SELECTED ITEMS ON SALE! CHECK IT OUT!"
+    }
+  },
+  "flex-layout.row#3-desktop": {
+    "props": {
+      "blockClass": "menu-link",
+      "horizontalAlign": "center",
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true,
+      "fullWidth": true
+    },
+    "children": [
+      "vtex.menu@2.x:menu#websites",
+      "flex-layout.col#spacer",
+      "vtex.menu@2.x:menu#institutional"
+    ]
+  },
+  "flex-layout.col#spacer": {
+    "props": {
+      "width": "grow"
+    }
+  },
+  "sticky-layout#4-desktop": {
+    "props": {
+      "blockClass": "sticky-header"
+    },
+    "children": ["flex-layout.row#4-desktop"]
+  },
+  "flex-layout.row#4-desktop": {
+    "props": {
+      "blockClass": "main-header",
+      "horizontalAlign": "center",
+      "verticalAlign": "center",
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true,
+      "fullWidth": true
+    },
+    "children": [
+      "flex-layout.col#logo-desktop",
+      "flex-layout.col#category-menu",
+      "flex-layout.col#spacer",
+      "search-bar",
+      "locale-switcher",
+      "login",
+      "minicart.v2"
+    ]
+  },
+  "flex-layout.col#logo-desktop": {
+    "props": {
+      "verticalAlign": "middle"
+    },
+    "children": ["logo#desktop"]
+  },
+  "flex-layout.col#category-menu": {
+    "props": {
+      "verticalAlign": "middle"
+    },
+    "children": ["vtex.menu@2.x:menu#category-menu"]
+  },
+  "logo#desktop": {
+    "props": {
+      "title": "Logo",
+      "href": "/",
+      "url": "assets/logo-white.svg",
+      "width": "180"
+    }
+  },
+
+  // Mobile
+  "header-layout.mobile": {
+    "children": ["sticky-layout#1-mobile"]
+  },
+  "sticky-layout#1-mobile": {
+    "children": ["flex-layout.row#1-mobile"]
+  },
+  "flex-layout.row#1-mobile": {
+    "children": ["drawer#1", "logo#mobile", "drawer#2"],
+    "props": {
+      "blockClass": "main-header-mobile",
+      "preventHorizontalStretch": true,
+      "preserveLayoutOnMobile": true,
+      "fullWidth": true
+    }
+  },
+
+  "drawer#1": {
+    "children": [
+      "responsive-layout.mobile#drawer-logo",
+      "menu#drawer",
+      "flex-layout.row#drawer-payform",
+      "flex-layout.row#drawer-text"
+    ]
+  },
+
+  "logo#mobile": {
+    "props": {
+      "title": "Logo",
+      "href": "/",
+      "url": "assets/logo-white.svg",
+      "width": "70"
+    }
+  },
+
+  "responsive-layout.mobile#drawer-logo": {
+    "children": ["flex-layout.row#drawer-logo"]
+  },
+
+  "flex-layout.row#drawer-logo": {
+    "children": ["image#drawer-logo"],
+    "props": {
+      "blockClass": "drawer-logo"
+    }
+  },
+
+  "image#drawer-logo": {
+    "props": {
+      "src": "assets/logo-white.svg",
+      "blockClass": "drawer__logo--image",
+      "maxWidth": "158",
+      "maxHeight": "92"
+    }
+  },
+
+  // Menu institucional
+  "menu#drawer": {
+    "children": [
+      "menu-item#category-sobre",
+      "menu-item#category-privacidade",
+      "menu-item#category-pagamento",
+      "menu-item#category-envio",
+      "menu-item#category-devolucoes",
+      "menu-item#category-parceiro"
+    ],
+    "props": {
+      "orientation": "vertical"
+    }
+  },
+
+  // Drawer formas de pagamento
+
+  "flex-layout.row#drawer-payform": {
+    "props": {
+      "blockClass": "drawer-payform"
+    },
+    "children": [
+      "flex-layout.row#drawer-visa",
+      "flex-layout.row#drawer-master",
+      "flex-layout.row#drawer-pix"
+    ]
+  },
+
+  "flex-layout.row#drawer-visa": {
+    "children": ["image#drawer-visa"],
+    "props": {
+      "blockClass": "drawer-payform"
+    }
+  },
+
+  "image#drawer-visa": {
+    "props": {
+      "src": "assets/visa-black.svg",
+      "blockClass": "drawer__payform--visa",
+      "maxWidth": "158",
+      "maxHeight": "92"
+    }
+  },
+
+  "flex-layout.row#drawer-master": {
+    "children": ["image#drawer-master"],
+    "props": {
+      "blockClass": "drawer-payform"
+    }
+  },
+
+  "image#drawer-master": {
+    "props": {
+      "src": "assets/master-black.svg",
+      "blockClass": "drawer__payform--master",
+      "maxWidth": "158",
+      "maxHeight": "92"
+    }
+  },
+
+  "flex-layout.row#drawer-pix": {
+    "children": ["image#drawer-pix"],
+    "props": {
+      "blockClass": "drawer-payform"
+    }
+  },
+
+  "image#drawer-pix": {
+    "props": {
+      "src": "assets/pix-black.svg",
+      "blockClass": "drawer__payform--pix",
+      "maxWidth": "158",
+      "maxHeight": "92"
+    }
+  },
+
+  // Drawer texto privacidade
+
+  "flex-layout.row#drawer-text": {
+    "props": {
+      "blockClass": "drawer-text"
+    },
+    "children": ["rich-text#drawer-text"]
+  },
+
+  "rich-text#drawer-text": {
+    "props": {
+      "text": "Suas informações são guardadas de forma 100% segura e todos os dados sensíveis são criptografados. Ao prosseguir você concorda com nossas [políticas de segurança](/politicas-de-seguranca).",
+      "blockClass": "drawer-text",
+      "textPosition": "CENTER",
+      "textAlignment": "CENTER"
+    }
+  },
+
+  // Drawer categorias e busca
+
+  "drawer#2": {
+    "children": [
+      "responsive-layout.mobile#drawer-logo-category",
+      "search-bar#mobile",
+      "flex-layout.row#drawer-title",
+      "menu#drawer-category"
+    ],
+    "props": {
+      "blockClass": "drawer-category"
+    }
+  },
+
+  "responsive-layout.mobile#drawer-logo-category": {
+    "children": ["flex-layout.row#drawer-logo-category"]
+  },
+
+  "flex-layout.row#drawer-logo-category": {
+    "children": ["image#drawer-logo-category", "menu#drawer-logo-category"],
+    "props": {
+      "blockClass": "drawer-logo"
+    }
+  },
+
+  "menu#drawer-logo-category": {
+    "children": ["menu-item#novidades", "menu-item#promocoes"],
+    "props": {
+      "orientation": "vertical",
+      "blockClass": "drawer-logo-category"
+    }
+  },
+
+  "image#drawer-logo-category": {
+    "props": {
+      "src": "assets/logo-white.svg",
+      "blockClass": "drawer__logo--image",
+      "maxWidth": "158",
+      "maxHeight": "92"
+    }
+  },
+
+  "search-bar#mobile": {
+    "props": {
+      "blockClass": "drawer-search"
+    }
+  },
+
+  "flex-layout.row#drawer-title": {
+    "props": {
+      "blockClass": "drawer-title"
+    },
+    "children": ["rich-text#drawer-title"]
+  },
+
+  "rich-text#drawer-title": {
+    "props": {
+      "text": "Encontre por tags",
+      "blockClass": "drawer-title",
+      "textPosition": "LEFT",
+      "textAlignment": "LEFT"
+    }
+  },
+
+  "menu#drawer-category": {
+    "children": [
+      "menu-item#category-tecnologia",
+      "menu-item#category-luz",
+      "menu-item#category-som",
+      "menu-item#category-arrumacao",
+      "menu-item#category-games",
+      "menu-item#category-musica",
+      "menu-item#category-utilidade",
+      "menu-item#category-casa"
+    ],
+    "props": {
+      "orientation": "vertical",
+      "blockClass": "drawer-category"
+    }
+  }
+}

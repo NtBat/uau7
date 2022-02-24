@@ -1,0 +1,260 @@
+{
+  "vtex.menu@2.x:menu#category-mobile": {
+    "props": {
+      "experimentalOptimizeRendering": true
+    },
+    "children": ["menu-item#category-sobre"]
+  },
+  "menu-item#category-sobre": {
+    "props": {
+      "id": "menu-item-category-home",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/sobre",
+        "noFollow": false,
+        "tagTitle": "Sobre a Uau7",
+        "text": "Sobre a Uau7"
+      }
+    }
+  },
+  "menu-item#category-privacidade": {
+    "props": {
+      "id": "menu-item-category-home",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/politicas-de-privacidade",
+        "noFollow": false,
+        "tagTitle": "Políticas de privacidade",
+        "text": "Políticas de privacidade"
+      }
+    }
+  },
+  "menu-item#category-pagamento": {
+    "props": {
+      "id": "menu-item-category-home",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/formas-de-pagamento",
+        "noFollow": false,
+        "tagTitle": "Formas de pagamento",
+        "text": "Formas de pagamento"
+      }
+    }
+  },
+  "menu-item#category-envio": {
+    "props": {
+      "id": "menu-item-category-home",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/entregas-e-envio",
+        "noFollow": false,
+        "tagTitle": "Entregas e envios",
+        "text": "Entregas e envios"
+      }
+    }
+  },
+  "menu-item#category-devolucoes": {
+    "props": {
+      "id": "menu-item-category-home",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/politicas-de-devolucoes",
+        "noFollow": false,
+        "tagTitle": "Políticas de devoluções",
+        "text": "Políticas de devoluções"
+      }
+    }
+  },
+  "menu-item#category-parceiro": {
+    "props": {
+      "id": "menu-item-category-home",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/parceiro",
+        "noFollow": false,
+        "tagTitle": "Seja um parceiro",
+        "text": "Seja um parceiro"
+      }
+    }
+  },
+
+  "menu-item#category-tecnologia": {
+    "props": {
+      "id": "menu-item-category-tecnologia",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "blockClass": "menu-item-category",
+      "itemProps": {
+        "type": "internal",
+        "href": "/tecnologia",
+        "noFollow": false,
+        "tagTitle": "Tecnologia",
+        "text": "Tecnologia"
+      }
+    }
+  },
+  "menu-item#category-luz": {
+    "props": {
+      "id": "menu-item-category-luz",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "blockClass": "menu-item-category",
+      "itemProps": {
+        "type": "internal",
+        "href": "/luz",
+        "noFollow": false,
+        "tagTitle": "Luz",
+        "text": "Luz"
+      }
+    }
+  },
+  "menu-item#category-som": {
+    "props": {
+      "id": "menu-item-category-som",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "blockClass": "menu-item-category",
+      "itemProps": {
+        "type": "internal",
+        "href": "/som",
+        "noFollow": false,
+        "tagTitle": "Som",
+        "text": "Som"
+      }
+    }
+  },
+  "menu-item#category-arrumacao": {
+    "props": {
+      "id": "menu-item-category-arrumacao",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "blockClass": "menu-item-category",
+      "itemProps": {
+        "type": "internal",
+        "href": "/arrumacao",
+        "noFollow": false,
+        "tagTitle": "Arrumação",
+        "text": "Arrumação"
+      }
+    }
+  },
+  "menu-item#category-games": {
+    "props": {
+      "id": "menu-item-category-games",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "blockClass": "menu-item-category",
+      "itemProps": {
+        "type": "internal",
+        "href": "/games",
+        "noFollow": false,
+        "tagTitle": "Games",
+        "text": "Games"
+      }
+    }
+  },
+  "menu-item#category-musica": {
+    "props": {
+      "id": "menu-item-category-musica",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "blockClass": "menu-item-category",
+      "itemProps": {
+        "type": "internal",
+        "href": "/musica",
+        "noFollow": false,
+        "tagTitle": "Música",
+        "text": "Música"
+      }
+    }
+  },
+  "menu-item#category-utilidade": {
+    "props": {
+      "id": "menu-item-category-utilidade",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "blockClass": "menu-item-category",
+      "itemProps": {
+        "type": "internal",
+        "href": "/utilidade",
+        "noFollow": false,
+        "tagTitle": "Utilidade",
+        "text": "Utilidade"
+      }
+    }
+  },
+  "menu-item#category-casa": {
+    "props": {
+      "id": "menu-item-category-casa",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "blockClass": "menu-item-category",
+      "itemProps": {
+        "type": "internal",
+        "href": "/casa",
+        "noFollow": false,
+        "tagTitle": "Casa",
+        "text": "Casa"
+      }
+    }
+  },
+
+  "menu-item#novidades": {
+    "props": {
+      "id": "menu-item-logo-novidades",
+      "type": "custom",
+      "iconId": 1,
+      "highlight": true,
+      "blockClass": "menu-item-novidades",
+      "itemProps": {
+        "type": "internal",
+        "href": "/novidades",
+        "noFollow": false,
+        "tagTitle": "Novidades",
+        "text": "Novidades"
+      }
+    }
+  },
+  "menu-item#promocoes": {
+    "props": {
+      "id": "menu-item-logo-promocoes",
+      "type": "custom",
+      "iconId": 1,
+      "highlight": true,
+      "blockClass": "menu-item-promocoes",
+      "itemProps": {
+        "type": "internal",
+        "href": "/promocoes",
+        "noFollow": false,
+        "tagTitle": "Promoções",
+        "text": "Promoções"
+      }
+    }
+  }
+}
