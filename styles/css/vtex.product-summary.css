@@ -40,3 +40,43 @@
 .image {
   border-radius: 0.25rem;
 }
+
+.priceContainer {
+  background: url("assets/bg-price.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  padding: 12px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sellingPriceContainer {
+  padding: 0;
+  color: #646464;
+}
+
+.buyButton :global(.vtex-button) {
+  background-image: url("assets/add-cart.svg");
+  background-size: 100% 100%;
+  background-color: transparent;
+  border: none;
+  font-size: 0;
+}
+
+.productBrandName {
+  border: 1px solid #CCC;
+  border-radius: 2px;
+  color: #CCC;
+  padding: 2px 6px;
+  font-weight: bold;
+  font-size: 12px;
+  font-family: "Roboto", sans-serif;
+}
+
+.description {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #CCC;
+  font-family: "Roboto", sans-serif;
+}

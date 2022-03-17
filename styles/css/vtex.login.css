@@ -1,0 +1,16 @@
+.buttonLink {
+  background: url("assets/login-black.svg");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  width: 22px;
+  height: 22px;
+  padding: 0 0 !important;
+  font-size: 0;
+}
+
+.buttonLink :global(.vtex-button){
+  background: transparent;
+  position: absolute;
+  top: -9px;
+  left: 0;
+}

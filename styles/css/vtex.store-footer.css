@@ -9,3 +9,28 @@
 .row--payment-methods {
   padding-top: 16px;
 }
+
+.footerLayout {
+  width: 88%;
+  background: #fff;
+  margin: 0 auto;
+  position: fixed;
+  bottom: 22px;
+  left: 4%;
+  border-radius: 5px;
+}
+
+.footerLayout::after {
+  content: '';
+  background: #FFF;
+  height: 100%;
+  width: 28px;
+  position: absolute;
+  right: -12px;
+  top: 0;
+  transform: skew(-16deg);
+  border-radius: 5px;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  z-index: 1;
+}

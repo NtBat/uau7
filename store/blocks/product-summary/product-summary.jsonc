@@ -9,7 +9,10 @@
       "flex-layout.row#selling-price-savings",
       "product-installments#summary",
       "add-to-cart-button"
-    ]
+    ],
+    "props": {
+      "blockClass": "shelf"
+    }
   },
   "flex-layout.col#productRating": {
     "props": {
@@ -26,13 +29,7 @@
     ]
   },
 
-  "product-summary-image#shelf": {
-    "props": {
-      "showBadge": false,
-      "aspectRatio": "1:1",
-      "maxHeight": 300
-    }
-  },
+  "product-summary-image#shelf": {},
 
   "vtex.product-highlights@2.x:product-highlights#collection": {
     "props": {
@@ -81,9 +78,7 @@
   },
   "product-price-savings#summary": {
     "props": {
-      "markers": [
-        "discount"
-      ],
+      "markers": ["discount"],
       "blockClass": "summary"
     }
   }

@@ -1,0 +1,34 @@
+.minicartIconContainer {
+  background: url("assets/cart-black.svg");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  width: 20px;
+  height: 20px;
+}
+
+.cartIcon {
+  display: none;
+}
+
+.minicartWrapperContainer {
+  width: 100%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  margin-left: -2px;
+  z-index: 2;
+}
+
+.openIconContainer {
+  padding: 0;
+}
+
+.openIconContainer :global(.vtex-button) {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.openIconContainer :global(.vtex-button__label) {
+  padding: 0
+}

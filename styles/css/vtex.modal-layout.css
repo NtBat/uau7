@@ -87,3 +87,10 @@
 .paper--product-gifts {
   padding: 1.5rem;
 }
+
+.flexRowContent--footer-mobile {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 3px 0 3px 15px;
+}
